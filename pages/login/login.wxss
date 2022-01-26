@@ -1,0 +1,170 @@
+/* pages/login/login.wxss */
+.forms{
+  width:90%;
+  margin:50rpx auto;
+}
+.pub-title{
+  width: 90%;
+  margin: 20px auto;
+  font-size: 40rpx;
+  font-weight: bold;
+  color: #333;
+}
+.logo-name{
+  text-align: center;
+  font-size: 30rpx;
+  color:#649CF0;  
+  font-family: 'PingFang-SC-Bold';
+  font-weight: bold;
+}
+.logos{
+  width:100%;
+  text-align: center;
+  margin-top:50rpx;
+}
+.logos image{
+  width: 210rpx;
+  height: 210rpx;
+}
+.forms .section{
+  /* margin-bottom:30rpx; */
+  font-size:35rpx;
+  /* width:90%; */
+  height:100rpx;
+  border-bottom:1px solid #ddd;
+  line-height:130rpx;
+  padding-left:20rpx;
+  /* border-radius: 10rpx; */
+  position: relative;
+}
+.forms .section image{
+  width:50rpx;
+  height:50rpx;
+  display: inline-block;
+  padding-right:50rpx;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  
+}
+
+.forms .section input{
+  width:80%;
+  display: inline-block;
+  /* margin-left: 90rpx; */
+  font-size: 30rpx;
+  position: absolute;
+  top:50%;
+  transform: translateY(-50%);
+}
+
+.forms .section picker{
+  width:80%;
+  display: inline-block;
+  margin-left: 90rpx;
+  font-size: 30rpx;
+  position: absolute;
+  top:50%;
+  transform: translateY(-50%);
+}
+
+.forms .section .picker-placeholder{
+  color:#808080;
+}
+
+
+.forms .btn-area{
+  width:100%;
+}
+.forms .btn-area button{
+  background:#649CF0;
+  color:#fff;
+  margin-top:20rpx;
+  border:#649CF0;
+  border-radius: 60rpx;
+}
+.contents i-row {
+  width: 100%;
+}
+.contents i-row i-col:last-child{
+  float: right;
+}
+.contents{
+  padding:30rpx;
+}
+.contents i-row i-col{
+  text-decoration: underline;
+  color: #666;
+   /* width:140rpx; */
+display:inline-block;
+text-align:left;
+height:60rpx;
+line-height:60rpx;
+}
+
+.wx-login image{
+  width: 100rpx;
+  height:100rpx;
+}
+.wx-login button::after{
+  border: none;
+}
+.wx-login{
+  text-align: center;
+  margin-top:50rpx;
+  font-size: 30rpx;
+  color: #999;
+}
+.wx-login button{
+  margin-top:30rpx;
+  width:150rpx;
+}
+
+.section:hover {
+  border-bottom: 2rpx solid #649CF0;
+}
+
+button:hover{
+  background-color: #fff;
+}
+button{
+  background: #fff;
+}
+
+.img-yzm{
+  width:180rpx;
+  height:100rpx;
+  float: right;
+  /* background: #ddd; */
+}
+.forms .section .img-yzm image{
+  width:180rpx;
+  height:100rpx;
+  padding:0;
+  margin: 0;
+}
+
+.login-btn{
+  position: relative;
+
+}
+.wx-login .login-btn .xian{
+  position: absolute;
+  width:150rpx;
+  height:2rpx;
+  display:inline-block;
+  top: 50%;
+  left:15%;
+
+}
+.wx-login .login-btn .xian-right{
+  left:63%;
+
+}
+.login-caozuo{
+  font-size: 28rpx;
+  color: #649CF0;
+  display: flex;
+  justify-content: space-between;
+  padding: 40rpx 20rpx;
+}

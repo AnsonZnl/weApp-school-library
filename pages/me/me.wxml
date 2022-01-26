@@ -1,0 +1,17 @@
+<view class="container">
+  <view>
+    <image src="/image/ic_student.png" class="avatar"></image>
+    <view class="name mb20">{{userInfo.username}}</view>
+    <view class="name mb20">{{userInfo.account}}</view>
+    <view>可借数量: {{userInfo.info.borrwoCount}}</view>
+    <view>已借图书: {{userInfo.info.borrwo}}</view>
+    <!-- <button type="primary" bindtap="scanCode">扫码添加图书</button> -->
+    <view>
+      <view wx:for="{{myBooks}}" wx:key="index">{{item.title}}</view>
+    </view>
+  </view>
+  <view>
+  
+    <button class="btn" bindtap="logou" type="warn">退出登陆</button>
+</view>
+</view>

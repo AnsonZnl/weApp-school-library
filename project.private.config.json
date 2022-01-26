@@ -1,0 +1,39 @@
+{
+    "setting": {},
+    "condition": {
+        "plugin": {
+            "list": []
+        },
+        "game": {
+            "list": []
+        },
+        "gamePlugin": {
+            "list": []
+        },
+        "miniprogram": {
+            "list": [
+                {
+                    "id": -1,
+                    "name": "me",
+                    "pathName": "pages/me/me",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "id": -1,
+                    "name": "booklist",
+                    "pathName": "pages/booklist/booklist",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "bookdetail",
+                    "pathName": "pages/bookdetail/bookdetail",
+                    "query": "id=54ad1eea61f0c4160aebfa640ca9d4a8",
+                    "launchMode": "default",
+                    "scene": null
+                }
+            ]
+        }
+    }
+}

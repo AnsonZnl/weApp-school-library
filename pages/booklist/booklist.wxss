@@ -1,0 +1,23 @@
+.book-item{
+  display: flex;
+  margin-bottom: 30rpx;
+}
+.book-img{
+  width: 180rpx;
+  height: 270rpx;
+}
+.des{
+  flex: 1;
+  padding:20rpx 0 20rpx 20rpx;
+}
+.puber {
+  font-size: 24rpx;
+}
+.author{
+  font-size: 30rpx;
+  color: #333;
+}
+.book-rate{
+  font-size: 26rpx;
+  color: red;
+}

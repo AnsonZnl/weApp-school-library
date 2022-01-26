@@ -1,0 +1,99 @@
+/* pages/bookdetail/bookdetail.wxss */
+page{
+  padding-bottom: 60px;
+}
+.img-box {
+  height: 300rpx;
+  position: relative;
+  padding: 50rpx 0;
+  overflow: hidden;
+}
+
+.img-bg {
+  width: 80%;
+  height: 300rpx;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: blur(20rpx);
+}
+
+.img {
+  position: absolute;
+  display: block;
+  width: 200rpx;
+  height: 300rpx;
+  margin: auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background: transparent;
+}
+
+.rate {
+  color: red;
+}
+
+.tag-item {
+  display: inline-block;
+  margin: 10rpx;
+  padding: 6rpx 10rpx;
+  border-radius: 4rpx;
+  border: solid red 2rpx;
+  color: red;
+  font-size: 20rpx;
+}
+
+.sum {
+  text-indent: 50rpx;
+  color: #333;
+  font-size: 26rpx;
+  line-height: 1.5;
+}
+
+.com-top {
+  display: flex;
+  justify-content: space-between;
+}
+.tags{
+  margin:10rpx -10rpx;
+}
+.com-user-name{
+  font-size: 26rpx;
+}
+.com-content {
+  text-indent: 20rpx;
+  color: #333;
+  font-size: 22rpx;
+  line-height: 1.5;
+}
+.deta{
+ font-size: 20rpx;
+  color: #999;
+}
+.com-bar{
+  height: 40rpx;
+  width: 100%;
+  line-height: 40rpx;
+  font-size: 22rpx;
+  text-align: center;
+  color: #c28036;
+  background: #fdf6ee;
+  margin-bottom: 20rpx;
+}
+.rating{
+  font-size: 22rpx;
+}
+.btn{
+  position: fixed;
+  bottom: 20px;
+  /* top: 0; */
+  left: 0;
+  right: 0;
+}

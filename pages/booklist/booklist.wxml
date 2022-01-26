@@ -1,0 +1,11 @@
+<view class="container">
+  <view class="book-item" wx:for="{{books}}" wx:key="index" id='{{item._id}}' bindtap="toDetail">
+    <image src="{{item.images}}" mode="aspectFit" class="book-img"></image>
+    <view class="des">
+      <view class="book-tit mb20">{{item.name}}</view>
+      <view class="mb20 author">作者：{{item.author}}</view>
+      <view class="mb20 puber">出版社：{{item.publisher}}</view>
+      <view class="book-rate">{{item.rate}}</view>
+    </view>
+  </view>
+</view>
