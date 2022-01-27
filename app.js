@@ -1,5 +1,5 @@
 
-import config from "./config/index.js"
+// import config from "./config/index.js"
 import fetch from "./utils/fetch.js"
 App({
   globalData: {
