@@ -8,6 +8,7 @@ Page({
    * 页面的初始数据
    */
   data: {
+    id: '',
     userInfo: {},
     myBooks:[]
   },
@@ -62,14 +63,25 @@ Page({
   onLoad: function(options) {
   
     let id = wx.getStorageSync('_userid')
+    this.setData({
+      id
+    })
     this.getuserInfo(id)
   },
-   getuserInfo: async function(id){
+   getuserInfo: async function(id = this.data.id){
     console.log(id);
     let res= await fetch('/student/info?_id='+id,{})
     console.log(res);
     this.setData({
       userInfo: res.data.data
+    })
+  },
+  returnBook(event){
+    let id = event.currentTarget.dataset.id
+    // console.log(event,id)
+    // return;
+    wx.navigateTo({
+      url: '/pages/return/return?id='+id,
     })
   },
   logou(){
@@ -92,7 +104,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function() {
-
+this.getuserInfo()
   },
 
   /**

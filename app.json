@@ -5,6 +5,7 @@
     "pages/booklist/booklist",
     "pages/bookdetail/bookdetail",
     "pages/borrow/borrow",
+    "pages/return/return",
     "pages/me/me"
   ],
   "window": {

@@ -4,7 +4,16 @@
     <view class="name mb20">{{userInfo.username}}</view>
     <view class="name mb20">{{userInfo.account}}</view>
     <view>可借数量: {{userInfo.info.borrwoCount}}</view>
-    <view>已借图书: {{userInfo.info.borrwo}}</view>
+    <!-- <view>已借图书: {{userInfo.info.borrwo}}</view> -->
+    <view wx:for="{{userInfo.info.borrwo}}">
+      <view>书籍名称：{{item.bookname}}</view>
+      <view>借书状态：
+      <text wx:if="{{item.code == 2}}">申请中</text>
+      <text wx:if="{{item.code == 3}}">借阅中</text>
+      <text wx:if="{{item.code == 4}}">归还中</text>
+      <button wx:if="{{item.code == 2}}" type="primary" data-id="{{item.bookid}}" bindtap="returnBook">归还书籍</button>
+      </view>
+    </view>
     <!-- <button type="primary" bindtap="scanCode">扫码添加图书</button> -->
     <view>
       <view wx:for="{{myBooks}}" wx:key="index">{{item.title}}</view>

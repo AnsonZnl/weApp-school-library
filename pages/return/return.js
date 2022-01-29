@@ -40,16 +40,12 @@ Page({
     },
     sendApply: async function() {
         let uinfo = wx.getStorageSync('_info')
-        let res =await fetch('/books/borrow', {
+        let res =await fetch('/books/return', {
             method: 'post',
             data: {
-                userid: uinfo._id,
-                bookid: this.data.id,
-                startDate: this.data.startDate,
-                endDate: this.data.endDate,
-                account: uinfo.account,
-                username: uinfo.username,
-                bookname: this.data.detail.name
+                userid: this.data.detail.status.bookid,
+                bookid: this.data.detail.status.userid,
+                id: this.data.detail.status.borrwoId
             }
         })
         console.log(res)

@@ -1,0 +1,16 @@
+<view class="mb30">
+    <view class="mb30">
+        <image src="{{detail.images}}" style="display:block;width: 200rpx;height:300rpx;margin: auto;"></image>
+    </view>
+    <view class="mb30">书籍名称：{{detail.name}}</view>
+    <view class="mb30">书籍作者：{{detail.author}}</view>
+    <!-- <view class="mb30"> 书籍评分：{{detail.rate}}</view> -->
+</view>
+<view class="" style="margin-bottom: 60rpx ;">
+    <view class="section__title mb30">借书日期：{{detail.status.startDate}}</view>
+    <view class="section__title mb30">
+        还书日期：{{detail.status.endDate}}
+    </view>
+
+</view>
+<button bindtap="sendApply" type="primary">确定</button>

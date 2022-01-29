@@ -1,4 +1,7 @@
 /* pages/me/me.wxss */
+page{
+  padding-bottom: 60px;
+}
 .avatar{
   display: block;
   width: 150rpx;
