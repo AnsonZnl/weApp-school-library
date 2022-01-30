@@ -1,15 +1,16 @@
 <!--pages/login/login.wxml-->
 <view class="containers">
+<view class="h1"> 校园图书馆管理系统 </view>
   <view class="logos">
     <image src="./../../image/logo.png"></image>
   </view>
   <view class="pub-title">
-    学员登录
+    学生登录
   </view>
   <view class="forms">
     <form bindsubmit="login">
       <view class="section">
-        <input title="手机号" model:value='{{account}}' name='account' placeholder="请输入学号" />
+        <input title="学号" model:value='{{account}}' name='account' placeholder="请输入学号" />
       </view>
       <view class="section">
         <input title="密码" maxlength='16' password="true" name='password' model:value='{{password}}' placeholder="请填写密码" />

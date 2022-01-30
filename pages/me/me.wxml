@@ -4,14 +4,15 @@
     <view class="name mb20">{{userInfo.username}}</view>
     <view class="name mb20">{{userInfo.account}}</view>
     <view>可借数量: {{userInfo.info.borrwoCount}}</view>
-    <!-- <view>已借图书: {{userInfo.info.borrwo}}</view> -->
+    <!-- <navigator open-type="switchTab" url="/page/booklist/book/list">去借书</navigator> -->
     <view wx:for="{{userInfo.info.borrwo}}">
-      <view>书籍名称：{{item.bookname}}</view>
-      <view>借书状态：
-      <text wx:if="{{item.code == 2}}">申请中</text>
-      <text wx:if="{{item.code == 3}}">借阅中</text>
-      <text wx:if="{{item.code == 4}}">归还中</text>
-      <button wx:if="{{item.code == 2}}" type="primary" data-id="{{item.bookid}}" bindtap="returnBook">归还书籍</button>
+      <view style="height: 2px;background-color: #ddd;margin: 20rpx 0;"></view>
+      <view wx:if="{{item.bookname}}">书籍名称：{{item.bookname}}</view>
+      <view wx:if="{{item.code == 2 || item.code == 3 || item.code ==4}}">借书状态：
+        <text wx:if="{{item.code == 2}}">申请中</text>
+        <text wx:if="{{item.code == 3}}">借阅中</text>
+        <text wx:if="{{item.code == 4}}">归还中</text>
+        <text wx:if="{{item.code == 3}}" class="link" data-id="{{item.bookid}}" bindtap="returnBook"> [归还书籍]</text>
       </view>
     </view>
     <!-- <button type="primary" bindtap="scanCode">扫码添加图书</button> -->
@@ -19,8 +20,10 @@
       <view wx:for="{{myBooks}}" wx:key="index">{{item.title}}</view>
     </view>
   </view>
-  <view>
-  
-    <button class="btn" bindtap="logou" type="warn">退出登陆</button>
-</view>
+  <view style="padding-top:40rpx;">
+    <button bindtap="feedback" type="warn">留言反馈</button>
+  </view>
+  <view style="padding-top:40rpx;">
+    <button bindtap="logou" type="warn">退出登陆</button>
+  </view>
 </view>

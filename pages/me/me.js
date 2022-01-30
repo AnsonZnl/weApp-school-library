@@ -1,4 +1,3 @@
-
 import fetch from "../../utils/fetch.js"
 
 // pages/me/me.js
@@ -10,9 +9,9 @@ Page({
   data: {
     id: '',
     userInfo: {},
-    myBooks:[]
+    myBooks: []
   },
-  
+
   // 扫码
   scanCode() {
     let that = this;
@@ -60,31 +59,36 @@ Page({
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function(options) {
-  
+  onLoad: function (options) {
+
     let id = wx.getStorageSync('_userid')
     this.setData({
       id
     })
     this.getuserInfo(id)
   },
-   getuserInfo: async function(id = this.data.id){
+  getuserInfo: async function (id = this.data.id) {
     console.log(id);
-    let res= await fetch('/student/info?_id='+id,{})
+    let res = await fetch('/student/info?_id=' + id, {})
     console.log(res);
     this.setData({
       userInfo: res.data.data
     })
   },
-  returnBook(event){
+  returnBook(event) {
     let id = event.currentTarget.dataset.id
     // console.log(event,id)
     // return;
     wx.navigateTo({
-      url: '/pages/return/return?id='+id,
+      url: '/pages/return/return?id=' + id,
     })
   },
-  logou(){
+  feedback() {
+    wx.navigateTo({
+      url: '/page/feedback/feedback',
+    })
+  },
+  logou() {
     wx.clearStorage({
       success: (res) => {
         wx.navigateTo({
@@ -96,49 +100,49 @@ Page({
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
-  onReady: function() {
+  onReady: function () {
 
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
-  onShow: function() {
-this.getuserInfo()
+  onShow: function () {
+    this.getuserInfo()
   },
 
   /**
    * 生命周期函数--监听页面隐藏
    */
-  onHide: function() {
+  onHide: function () {
 
   },
 
   /**
    * 生命周期函数--监听页面卸载
    */
-  onUnload: function() {
+  onUnload: function () {
 
   },
 
   /**
    * 页面相关事件处理函数--监听用户下拉动作
    */
-  onPullDownRefresh: function() {
+  onPullDownRefresh: function () {
 
   },
 
   /**
    * 页面上拉触底事件的处理函数
    */
-  onReachBottom: function() {
+  onReachBottom: function () {
 
   },
 
   /**
    * 用户点击右上角分享
    */
-  onShareAppMessage: function() {
+  onShareAppMessage: function () {
 
   }
 })

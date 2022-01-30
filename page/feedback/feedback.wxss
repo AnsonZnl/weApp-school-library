@@ -1,0 +1,8 @@
+.inp{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10rpx;
+    border: solid #ddd 1px;
+    margin-bottom: 40rpx;
+}

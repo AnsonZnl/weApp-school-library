@@ -5,3 +5,9 @@
 .mb20{
   margin-bottom: 20rpx;
 }
+.h1{
+  text-align: center;
+  color: #333;
+  font-weight: bold;
+  font-size: 40rpx;
+}

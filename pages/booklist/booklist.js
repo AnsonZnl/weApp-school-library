@@ -10,6 +10,7 @@ Page({
     books: [],
     page: 1,
     more: true,
+    notice:{}
   },
 
   /**
@@ -90,7 +91,14 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+fetch('/notice/get',{
+  method: 'get'
+}).then(res=>{
+  console.log(res.data.data);
+  this.setData({
+    notice: res.data.data
+  })
+})
   },
 
   /**

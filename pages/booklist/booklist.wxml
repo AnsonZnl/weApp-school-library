@@ -1,3 +1,9 @@
+<view class='notice-wrap' hidden='{{!notice.title}}'>
+　　<view class='tongzhitext'>
+　　　　<text class="tongzhi-text">{{notice.title}}：{{notice.content}}</text>
+　　</view>
+<!-- 　　<view bindtap='switchNotice' class="closeView">x</view> -->
+</view>
 <view class="container">
   <view class="book-item" wx:for="{{books}}" wx:key="index" id='{{item._id}}' bindtap="toDetail">
     <image src="{{item.images}}" mode="aspectFit" class="book-img"></image>

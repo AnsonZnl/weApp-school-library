@@ -1,0 +1,13 @@
+<view style="padding:40rpx;">
+ <view>
+    <view class="mb20">留言标题：</view>
+    <input model:value="{{title}}" class="inp" style="height: 40px;" type="text" placeholder="请输入留言标题"/>
+ </view>
+ <view>
+    <view class="mb20">留言内容：</view>
+    <textarea model:value="{{content}}" class="inp" type="text" placeholder="请输入留言内容"/>
+ </view>
+ <view style="padding-bottom:40rpx;">
+    <button bindtap="submit" type="primary">提交</button>
+ </view>
+</view>

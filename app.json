@@ -6,7 +6,8 @@
     "pages/bookdetail/bookdetail",
     "pages/borrow/borrow",
     "pages/return/return",
-    "pages/me/me"
+    "pages/me/me",
+    "page/feedback/feedback"
   ],
   "window": {
     "backgroundColor": "#FFFFFF",

@@ -1,6 +1,6 @@
 /* pages/me/me.wxss */
 page{
-  padding-bottom: 60px;
+  padding-bottom: 30rpx;
 }
 .avatar{
   display: block;
@@ -18,4 +18,7 @@ page{
   /* top: 0; */
   left: 0;
   right: 0;
+}
+.link{
+  color: blue;
 }
