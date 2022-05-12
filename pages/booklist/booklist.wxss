@@ -1,3 +1,6 @@
+page{
+  overflow-y: scroll hidden;
+}
 .book-item{
   display: flex;
   margin-bottom: 30rpx;
@@ -58,6 +61,7 @@
   line-height: 60rpx;
   color: #d09868;
   font-size: 28rpx;
+  overflow: hidden;
  }
  
  .closeView {

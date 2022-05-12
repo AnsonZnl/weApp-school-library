@@ -85,7 +85,7 @@ Page({
   },
   feedback() {
     wx.navigateTo({
-      url: '/page/feedback/feedback',
+      url: '/pages/feedback/feedback',
     })
   },
   logou() {

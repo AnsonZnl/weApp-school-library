@@ -7,7 +7,7 @@
     "pages/borrow/borrow",
     "pages/return/return",
     "pages/me/me",
-    "page/feedback/feedback"
+    "pages/feedback/feedback"
   ],
   "window": {
     "backgroundColor": "#FFFFFF",
